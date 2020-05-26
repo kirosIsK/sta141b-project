@@ -32,3 +32,5 @@ Your grade will be determined based on the following criterion.
 ## How to submit
 
 To be announced.
+
+Due date: 6/10/2020 11.59pm
