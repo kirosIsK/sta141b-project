@@ -22,7 +22,7 @@ Your grade will be determined based on the following criterion.
 - (30%) Statistical correctness. 
     - Make sure that your app is statistically sensible.
     You do not want to produce anything that are statistical wrong, for example, using a piechart to show a quantitative variable.
-    - For the same of statistical analyses, make sure the analyses were correctly done.
+    - For the statistical analyses, make sure the analyses were correctly done.
 - (40%) coding
     - Is it usable? Bugs?
     - Is the code efficient?
