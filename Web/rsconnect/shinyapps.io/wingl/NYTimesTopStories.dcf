@@ -1,0 +1,12 @@
+name: NYTimesTopStories
+title: NYTimesTopStories
+username:
+account: wingl
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2440327
+bundleId: 3255609
+url: https://wingl.shinyapps.io/NYTimesTopStories/
+when: 1591855397.46522
+asMultiple: FALSE
+asStatic: FALSE
