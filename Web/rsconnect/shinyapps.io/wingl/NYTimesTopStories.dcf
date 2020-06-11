@@ -5,8 +5,9 @@ account: wingl
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2440327
-bundleId: 3255983
+bundleId: 3256834
 url: https://wingl.shinyapps.io/NYTimesTopStories/
-when: 1591861687.00632
+when: 1591879340.07034
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: NA.png

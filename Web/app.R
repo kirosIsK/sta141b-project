@@ -17,7 +17,7 @@ TOP_STORIES_API <- function(section) {
     web <- GET(
         str_glue("https://api.nytimes.com/svc/topstories/v2/{SECTION}.json?api-key={KEY}",
                  SECTION = section,
-                 KEY     = Sys.getenv("NYT_KEY"))
+                 KEY     = "I74glzbxm6rd5lMhcqDATnUwvIufXuAb")
     )
     
     u <- content(web, as = "text", encoding = "UTF-8")
@@ -115,12 +115,7 @@ ui <- fluidPage(
                 h4("Distribution on the Topic"),
                 plotOutput("topicDistr")
             ),
-            
-            fluidRow(
-                h4("Times of Appearance for Celebrity"),
-                plotOutput("celeDistr")
-            ),
-            
+
             fluidRow(
                 h4("Times of Appearance for Celebrity"),
                 plotOutput("celeDistr")
@@ -128,8 +123,7 @@ ui <- fluidPage(
             
             fluidRow(
                 htmlOutput("lineBreak3"),
-                h6("Copyright (c) 2020 The New York Times Company. All Rights Reserved.")
-            )
+                h6("Copyright (c) 2020 The New York Times Company. All Rights Reserved."))
         ),
         mainPanel(
             fluidRow(
@@ -156,10 +150,6 @@ server <- function(input, output, session) {
         updateSelectInput(session, "article", choices = sessionAPI()$results$title)
     })
     
-    ##-- Observe themeModel Change
-    observeEvent(input$themeMode, {
-        DEFAULT_THEMEMODE <<- input$themeMode
-    })
                  
     ##-- Print geographic information
     output$geo <- renderText({
